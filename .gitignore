@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+venv/
+.DS_Store
+.vscode/
+.idea/
+
+# Generated reports (remove this if you want to commit sample output)
+reports/*.md
+reports/*.txt
+!reports/.gitkeep

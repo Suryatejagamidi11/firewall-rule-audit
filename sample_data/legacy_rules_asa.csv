@@ -1,0 +1,13 @@
+rule_name,source,destination,service,port,action,hit_count,disabled,log_enabled,vendor
+ALLOW-WEB-DMZ,10.20.0.0/24,10.30.0.0/24,tcp,443,allow,15420,false,true,cisco_asa
+ALLOW-DNS-INTERNAL,10.20.0.0/24,10.30.0.10/32,udp,53,allow,89210,false,true,cisco_asa
+LEGACY-ANY-ANY,any,any,any,any,allow,342,false,false,cisco_asa
+OLD-VPN-RULE-1,192.168.50.0/24,10.30.0.0/16,tcp,1723,allow,0,false,true,cisco_asa
+OLD-VPN-RULE-2,192.168.50.0/24,10.30.0.0/16,tcp,1723,allow,0,false,true,cisco_asa
+ALLOW-SSH-MGMT,10.5.0.0/24,10.30.0.0/24,tcp,22,allow,4521,false,true,cisco_asa
+DECOMM-PARTNER-LINK,172.16.99.0/24,10.30.0.0/24,tcp,any,allow,0,false,false,cisco_asa
+ALLOW-SMTP-RELAY,10.20.0.0/24,10.30.0.20/32,tcp,25,allow,7890,false,true,cisco_asa
+WIDE-OPEN-TEST-RULE,10.0.0.0/8,10.0.0.0/8,any,any,allow,55,false,false,cisco_asa
+ALLOW-HTTPS-DMZ-DUP,10.20.0.0/24,10.30.0.0/24,tcp,443,allow,0,false,true,cisco_asa
+BLOCK-KNOWN-BAD,any,any,any,any,deny,120340,false,true,cisco_asa
+ALLOW-RDP-JUMPHOST,10.5.0.5/32,10.30.0.50/32,tcp,3389,allow,2103,false,true,cisco_asa
